@@ -29,6 +29,7 @@ function input() {
       //Create paragraph with new words' order
       const newOrder = document.createElement("p");
       newOrder.innerHTML = inputWordsOrder;
+      document.getElementById("outDataText").innerHTML = "";
       document.getElementById("outDataText").appendChild(newOrder);
     });
 }
