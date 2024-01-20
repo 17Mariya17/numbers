@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", input);
+document.addEventListener("DOMContentLoaded", secondTask);
 
+//First task
 function input() {
   document
     .getElementById("formInputData")
@@ -31,5 +33,26 @@ function input() {
       newOrder.innerHTML = inputWordsOrder;
       document.getElementById("outDataText").innerHTML = "";
       document.getElementById("outDataText").appendChild(newOrder);
+    });
+}
+
+//Second task
+function secondTask() {
+  document
+    .getElementById("formNumber")
+    .addEventListener("submit", function (e) {
+      //Prevent default page upload
+      e.preventDefault();
+      //Split number
+      const splitNum = document
+        .getElementById("yourNumber")
+        .value.toString()
+        .split("")
+        .join("  ");
+      //Create paragraph with splited number
+      const numberOrder = document.createElement("p");
+      numberOrder.innerHTML = splitNum;
+      document.getElementById("outNumberText").innerHTML = "";
+      document.getElementById("outNumberText").appendChild(numberOrder);
     });
 }
