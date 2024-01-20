@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <script src="./pages/form.js"></script>
+  </head>
+  <body>
+    <form id="formInputData" action="">
+      <div class="input-wrap">
+        <label for="firstWord">Type your first word:</label>
+        <input id="firstWord" type="text" />
+      </div>
+      <div class="input-wrap">
+        <label for="secondWord">Type your second word:</label>
+        <input id="secondWord" type="text" />
+      </div>
+      <div class="input-wrap">
+        <label for="thirdWord">Type your third word:</label>
+        <input id="thirdWord" type="text" />
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+    <div id="outDataText" class="output-data">
+      <h2>New words' order:</h2>
+    </div>
+  </body>
 </html>
